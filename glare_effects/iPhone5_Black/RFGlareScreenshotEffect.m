@@ -24,7 +24,7 @@
  */
 
 - (NSString *)effectDisplayName {
-    return @"iPhone 5S (Black) Glare";
+    return @"iPhone 5 (Black) Glare";
 }
 
 /*
