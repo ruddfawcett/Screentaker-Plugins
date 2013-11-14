@@ -24,7 +24,8 @@
  */
 
 - (NSString *)effectDisplayName {
-    return @"iPhone 5 (Black) Glare";
+    // Change color based on iPhone color...
+    return @"iPhone 5 (Color) Glare";
 }
 
 /*
@@ -68,7 +69,8 @@
      In order to get the path for the image file, you have to use [[NSBundle bundleForClass:[self class]] pathForResource:resource ofType:type]
      */
     
-    NSImage *iPhone5Portrait = [[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"iPhone5_Black" ofType:@"png"]];
+    // Again, make sure you have  the right color...
+    NSImage *iPhone5Portrait = [[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"iPhone5_Color" ofType:@"png"]];
     
     [iPhone5Portrait drawInRect:NSMakeRect(0, 0, 1182, 2144) fromRect:NSMakeRect(0, 0, 1182, 2144) operation:NSCompositeSourceOver fraction:1]; // Draw the background image
     
