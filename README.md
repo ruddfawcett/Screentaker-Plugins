@@ -22,9 +22,11 @@ All of the iPhone 5C colors. *
 \* **Note:** These were compiled when I was half delirious, so there are probably some errors.
 
 ##Downloads
+**Glare**
 - **iPhone 5 Black w/ Glare:** [iPhone5_Black_Glare.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5_Black_Glare.screentakerplugin.zip)
 - **iPhone 5 White w/ Glare:** [iPhone5_White_Glare.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5_White_Glare.screentakerplugin.zip)
 
+**iPhone 5C**
 - **iPhone 5C Green:** [iPhone5C_Green.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_Green.screentakerplugin.zip)
 - **iPhone 5 Blue:** [iPhone5C_Blue.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_Blue.screentakerplugin.zip)
 - **iPhone 5 Red:** [iPhone5C_Red.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_Red.screentakerplugin.zip)
