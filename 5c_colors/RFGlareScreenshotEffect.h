@@ -1,5 +1,5 @@
 //
-//  RFGlareScreenshotEffect.h
+//  RF5CColorEffect.h
 //  iOS Screentaker Plugin
 //
 //  Created by Rex Finn on 11/13/13.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FKScreenshotEffect.h"
 
-@interface RFGlareScreenshotEffect : NSObject <FKScreenshotEffect> {
+@interface RF5CColorEffect : NSObject <FKScreenshotEffect> {
     
 }
 
