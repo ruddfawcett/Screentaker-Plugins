@@ -1,14 +1,14 @@
 //
-//  RFGlareScreenshotEffect.m
+//  RF5CColorEffect.m
 //  iOS Screentaker Plugin
 //
 //  Created by Rex Finn on 11/13/13.
 //  Copyright (c) 2013 Rex Finn. All rights reserved.
 //
 
-#import "RFGlareScreenshotEffect.h"
+#import "RF5CColorEffect.h"
 
-@implementation RFGlareScreenshotEffect
+@implementation RF5CColorEffect
 
 /*
  Minimum version of Screentaker this effect requires.
@@ -24,7 +24,7 @@
  */
 
 - (NSString *)effectDisplayName {
-    return @"iPhone 5 (White) Glare";
+    return @"iPhone 5C - Color";
 }
 
 /*
@@ -68,7 +68,7 @@
      In order to get the path for the image file, you have to use [[NSBundle bundleForClass:[self class]] pathForResource:resource ofType:type]
      */
     
-    NSImage *iPhone5Portrait = [[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"iPhone5C_Red" ofType:@"png"]];
+    NSImage *iPhone5Portrait = [[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"iPhone5C_Color" ofType:@"png"]];
     
     [iPhone5Portrait drawInRect:NSMakeRect(0, 0, 650, 1365) fromRect:NSMakeRect(0, 0, 650, 1365) operation:NSCompositeSourceOver fraction:1]; // Draw the background image
     
