@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iPhone Screentaker Plugin' target in the 'iPhone Screentaker Plugin' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
