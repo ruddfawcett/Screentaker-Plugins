@@ -19,16 +19,14 @@ All of the iPhone 5C colors. *
 ![White iPhone 5C](http://i.imgur.com/nRL2HKZ.png)
 ![Yellow iPhone 5C](http://i.imgur.com/syoOdVn.png)
 
-\* **Note:** These were compiled when I was half delirious, so there are probably some errors.
-
 ##Downloads
-**Glare**
-- **iPhone 5 Black w/ Glare:** [iPhone5_Black_Glare.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5_Black_Glare.screentakerplugin.zip)
-- **iPhone 5 White w/ Glare:** [iPhone5_White_Glare.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5_White_Glare.screentakerplugin.zip)
+###Glare
+- **iPhone 5s Black with Glare:** [Download](https://github.com/fabiankr/Screentaker-Plugins/raw/master/downloads/glare-black.zip)  
+- **iPhone 5s White with Glare:** [Download](https://github.com/fabiankr/Screentaker-Plugins/raw/master/downloads/glare-white.zip)  
 
-**iPhone 5C**
-- **iPhone 5C Green:** [iPhone5C_Green.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_Green.screentakerplugin.zip)
-- **iPhone 5 Blue:** [iPhone5C_Blue.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_Blue.screentakerplugin.zip)
-- **iPhone 5 Red:** [iPhone5C_Red.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_Red.screentakerplugin.zip)
-- **iPhone 5 White:** [iPhone5C_White.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_White.screentakerplugin.zip)
-- **iPhone 5 Yellow:** [iPhone5C_Yellow.screentakerplugin] (https://github.com/rexfinn/Screentaker-Plugins/raw/master/downloads/iPhone5C_Yellow.screentakerplugin.zip)
+###iPhone 5c
+- **iPhone 5c Green:** [Download](https://github.com/fabiankr/Screentaker-Plugins/raw/master/downloads/5c-green.zip)  
+- **iPhone 5c Blue:** [Download](https://github.com/fabiankr/Screentaker-Plugins/raw/master/downloads/5c-blue.zip)  
+- **iPhone 5c Red:** [Download](https://github.com/fabiankr/Screentaker-Plugins/raw/master/downloads/5c-red.zip)  
+- **iPhone 5c White:** [Download](https://github.com/fabiankr/Screentaker-Plugins/raw/master/downloads/5c-white.zip)  
+- **iPhone 5c Yellow:** [Download](https://github.com/fabiankr/Screentaker-Plugins/raw/master/downloads/5c-yellow.zip)  

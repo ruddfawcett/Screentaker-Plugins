@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B8E14F313F0114500DD152F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E14F213F0114500DD152F /* Cocoa.framework */; };
+		4B91616418F6C0E100EF23A8 /* RF5CRedEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B91616318F6C0E100EF23A8 /* RF5CRedEffect.m */; };
+		4B91618A18F6C2D800EF23A8 /* RF5CBlueEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B91615618F6C03A00EF23A8 /* RF5CBlueEffect.m */; };
+		4B91619118F6C2D800EF23A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E14F213F0114500DD152F /* Cocoa.framework */; };
+		4B91619918F6C2D800EF23A8 /* iPhone5C_Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91617118F6C1B100EF23A8 /* iPhone5C_Blue.png */; };
+		4B9161A718F6C2E900EF23A8 /* RF5CGreenEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B91616918F6C0FE00EF23A8 /* RF5CGreenEffect.m */; };
+		4B9161AA18F6C2E900EF23A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E14F213F0114500DD152F /* Cocoa.framework */; };
+		4B9161B118F6C2E900EF23A8 /* iPhone5C_Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91617318F6C1B700EF23A8 /* iPhone5C_Green.png */; };
+		4B9161C118F6C2F100EF23A8 /* RF5CYellowEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B91616C18F6C10900EF23A8 /* RF5CYellowEffect.m */; };
+		4B9161C318F6C2F100EF23A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E14F213F0114500DD152F /* Cocoa.framework */; };
+		4B9161D418F6C2F600EF23A8 /* RF5CWhiteEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B91616F18F6C11400EF23A8 /* RF5CWhiteEffect.m */; };
+		4B9161DC18F6C2F600EF23A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E14F213F0114500DD152F /* Cocoa.framework */; };
+		4B9161E018F6C2F600EF23A8 /* iPhone5C_White.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91617718F6C1C300EF23A8 /* iPhone5C_White.png */; };
+		4B9161F018F6C2FD00EF23A8 /* RFGlareWhiteEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B91617C18F6C22700EF23A8 /* RFGlareWhiteEffect.m */; };
+		4B9161F518F6C2FD00EF23A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E14F213F0114500DD152F /* Cocoa.framework */; };
+		4B91620818F6C30300EF23A8 /* RFGlareBlackEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B91617F18F6C23E00EF23A8 /* RFGlareBlackEffect.m */; };
+		4B91620E18F6C30300EF23A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8E14F213F0114500DD152F /* Cocoa.framework */; };
+		4B91621D18F6C4A200EF23A8 /* iPhone5C_Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91617518F6C1BC00EF23A8 /* iPhone5C_Red.png */; };
+		4B91621E18F6C4D400EF23A8 /* iPhone5C_Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91617918F6C1CA00EF23A8 /* iPhone5C_Yellow.png */; };
+		4B91621F18F6C4E000EF23A8 /* iPhone5_Glare.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91618118F6C27A00EF23A8 /* iPhone5_Glare.png */; };
+		4B91622018F6C4E500EF23A8 /* iPhone5_White.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91618218F6C27A00EF23A8 /* iPhone5_White.png */; };
+		4B91622118F6C4F100EF23A8 /* iPhone5_Glare.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91618118F6C27A00EF23A8 /* iPhone5_Glare.png */; };
+		4B91622218F6C4F400EF23A8 /* iPhone5_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B91618518F6C28100EF23A8 /* iPhone5_Black.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B8E14EF13F0114500DD152F /* iPhone 5c Red.screentakerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone 5c Red.screentakerplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8E14F213F0114500DD152F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4B8E14F513F0114500DD152F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4B8E14F613F0114500DD152F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4B8E14F713F0114500DD152F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B8E150613F0119600DD152F /* 5C-Red-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "5C-Red-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4B8E150813F011A200DD152F /* iOS Screentaker Plugin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS Screentaker Plugin-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		4B91615518F6C03A00EF23A8 /* RF5CBlueEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RF5CBlueEffect.h; sourceTree = SOURCE_ROOT; };
+		4B91615618F6C03A00EF23A8 /* RF5CBlueEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RF5CBlueEffect.m; sourceTree = SOURCE_ROOT; };
+		4B91616218F6C0E100EF23A8 /* RF5CRedEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RF5CRedEffect.h; sourceTree = SOURCE_ROOT; };
+		4B91616318F6C0E100EF23A8 /* RF5CRedEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RF5CRedEffect.m; sourceTree = SOURCE_ROOT; };
+		4B91616818F6C0FE00EF23A8 /* RF5CGreenEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RF5CGreenEffect.h; sourceTree = SOURCE_ROOT; };
+		4B91616918F6C0FE00EF23A8 /* RF5CGreenEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RF5CGreenEffect.m; sourceTree = SOURCE_ROOT; };
+		4B91616B18F6C10900EF23A8 /* RF5CYellowEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RF5CYellowEffect.h; sourceTree = SOURCE_ROOT; };
+		4B91616C18F6C10900EF23A8 /* RF5CYellowEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RF5CYellowEffect.m; sourceTree = SOURCE_ROOT; };
+		4B91616E18F6C11400EF23A8 /* RF5CWhiteEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RF5CWhiteEffect.h; sourceTree = SOURCE_ROOT; };
+		4B91616F18F6C11400EF23A8 /* RF5CWhiteEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RF5CWhiteEffect.m; sourceTree = SOURCE_ROOT; };
+		4B91617118F6C1B100EF23A8 /* iPhone5C_Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5C_Blue.png; sourceTree = SOURCE_ROOT; };
+		4B91617318F6C1B700EF23A8 /* iPhone5C_Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5C_Green.png; sourceTree = SOURCE_ROOT; };
+		4B91617518F6C1BC00EF23A8 /* iPhone5C_Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5C_Red.png; sourceTree = SOURCE_ROOT; };
+		4B91617718F6C1C300EF23A8 /* iPhone5C_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5C_White.png; sourceTree = SOURCE_ROOT; };
+		4B91617918F6C1CA00EF23A8 /* iPhone5C_Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5C_Yellow.png; sourceTree = SOURCE_ROOT; };
+		4B91617B18F6C22700EF23A8 /* RFGlareWhiteEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFGlareWhiteEffect.h; sourceTree = SOURCE_ROOT; };
+		4B91617C18F6C22700EF23A8 /* RFGlareWhiteEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFGlareWhiteEffect.m; sourceTree = SOURCE_ROOT; };
+		4B91617E18F6C23E00EF23A8 /* RFGlareBlackEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFGlareBlackEffect.h; sourceTree = SOURCE_ROOT; };
+		4B91617F18F6C23E00EF23A8 /* RFGlareBlackEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFGlareBlackEffect.m; sourceTree = SOURCE_ROOT; };
+		4B91618118F6C27A00EF23A8 /* iPhone5_Glare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_Glare.png; sourceTree = SOURCE_ROOT; };
+		4B91618218F6C27A00EF23A8 /* iPhone5_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_White.png; sourceTree = SOURCE_ROOT; };
+		4B91618518F6C28100EF23A8 /* iPhone5_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5_Black.png; sourceTree = SOURCE_ROOT; };
+		4B91619E18F6C2D800EF23A8 /* iPhone 5c Blue.screentakerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone 5c Blue.screentakerplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B91619F18F6C2D800EF23A8 /* Glare-Black-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glare-Black-Info.plist"; path = "/Users/fabiankreiser/Desktop/Screentaker-Plugins/Screentaker Plugin/Glare-Black-Info.plist"; sourceTree = "<absolute>"; };
+		4B9161B718F6C2E900EF23A8 /* iPhone 5c Green.screentakerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone 5c Green.screentakerplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9161B818F6C2EA00EF23A8 /* 5C-Blue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "5C-Blue-Info.plist"; path = "/Users/fabiankreiser/Desktop/Screentaker-Plugins/Screentaker Plugin/5C-Blue-Info.plist"; sourceTree = "<absolute>"; };
+		4B9161D018F6C2F100EF23A8 /* iPhone 5c Yellow.screentakerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone 5c Yellow.screentakerplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9161D118F6C2F100EF23A8 /* 5C-Green-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "5C-Green-Info.plist"; path = "/Users/fabiankreiser/Desktop/Screentaker-Plugins/Screentaker Plugin/5C-Green-Info.plist"; sourceTree = "<absolute>"; };
+		4B9161E918F6C2F600EF23A8 /* iPhone 5c White.screentakerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone 5c White.screentakerplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9161EA18F6C2F700EF23A8 /* 5C-White-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "5C-White-Info.plist"; path = "/Users/fabiankreiser/Desktop/Screentaker-Plugins/Screentaker Plugin/5C-White-Info.plist"; sourceTree = "<absolute>"; };
+		4B91620218F6C2FD00EF23A8 /* iPhone 5s Glare White.screentakerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone 5s Glare White.screentakerplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B91620318F6C2FE00EF23A8 /* 5C-Yellow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "5C-Yellow-Info.plist"; path = "/Users/fabiankreiser/Desktop/Screentaker-Plugins/Screentaker Plugin/5C-Yellow-Info.plist"; sourceTree = "<absolute>"; };
+		4B91621B18F6C30300EF23A8 /* iPhone 5s Glare Black.screentakerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone 5s Glare Black.screentakerplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B91621C18F6C30300EF23A8 /* Glare-White-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Glare-White-Info.plist"; path = "/Users/fabiankreiser/Desktop/Screentaker-Plugins/Screentaker Plugin/Glare-White-Info.plist"; sourceTree = "<absolute>"; };
+		4BB3692D182B81C10016F8E9 /* FKScreenshotEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKScreenshotEffect.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B8E14EC13F0114500DD152F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8E14F313F0114500DD152F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B91619018F6C2D800EF23A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91619118F6C2D800EF23A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161A918F6C2E900EF23A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161AA18F6C2E900EF23A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161C218F6C2F100EF23A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161C318F6C2F100EF23A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161DB18F6C2F600EF23A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161DC18F6C2F600EF23A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161F418F6C2FD00EF23A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161F518F6C2FD00EF23A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B91620D18F6C30300EF23A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91620E18F6C30300EF23A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B09E66C13F6937F003003CC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B91617118F6C1B100EF23A8 /* iPhone5C_Blue.png */,
+				4B91617318F6C1B700EF23A8 /* iPhone5C_Green.png */,
+				4B91617518F6C1BC00EF23A8 /* iPhone5C_Red.png */,
+				4B91617718F6C1C300EF23A8 /* iPhone5C_White.png */,
+				4B91617918F6C1CA00EF23A8 /* iPhone5C_Yellow.png */,
+				4B91618118F6C27A00EF23A8 /* iPhone5_Glare.png */,
+				4B91618218F6C27A00EF23A8 /* iPhone5_White.png */,
+				4B91618518F6C28100EF23A8 /* iPhone5_Black.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4B8E14E413F0114500DD152F = {
+			isa = PBXGroup;
+			children = (
+				4B8E14F813F0114500DD152F /* iOS Screentaker Plugin */,
+				4B8E14F113F0114500DD152F /* Frameworks */,
+				4B8E14F013F0114500DD152F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B8E14F013F0114500DD152F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E14EF13F0114500DD152F /* iPhone 5c Red.screentakerplugin */,
+				4B91619E18F6C2D800EF23A8 /* iPhone 5c Blue.screentakerplugin */,
+				4B9161B718F6C2E900EF23A8 /* iPhone 5c Green.screentakerplugin */,
+				4B9161D018F6C2F100EF23A8 /* iPhone 5c Yellow.screentakerplugin */,
+				4B9161E918F6C2F600EF23A8 /* iPhone 5c White.screentakerplugin */,
+				4B91620218F6C2FD00EF23A8 /* iPhone 5s Glare White.screentakerplugin */,
+				4B91621B18F6C30300EF23A8 /* iPhone 5s Glare Black.screentakerplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B8E14F113F0114500DD152F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E14F213F0114500DD152F /* Cocoa.framework */,
+				4B8E14F413F0114500DD152F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B8E14F413F0114500DD152F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E14F513F0114500DD152F /* AppKit.framework */,
+				4B8E14F613F0114500DD152F /* CoreData.framework */,
+				4B8E14F713F0114500DD152F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4B8E14F813F0114500DD152F /* iOS Screentaker Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E150513F0117E00DD152F /* Classes */,
+				4B8E150713F0119900DD152F /* Other Sources */,
+				4B8E150413F0117700DD152F /* Resources */,
+			);
+			path = "iOS Screentaker Plugin";
+			sourceTree = "<group>";
+		};
+		4B8E150413F0117700DD152F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E150613F0119600DD152F /* 5C-Red-Info.plist */,
+				4B9161B818F6C2EA00EF23A8 /* 5C-Blue-Info.plist */,
+				4B9161D118F6C2F100EF23A8 /* 5C-Green-Info.plist */,
+				4B9161EA18F6C2F700EF23A8 /* 5C-White-Info.plist */,
+				4B91620318F6C2FE00EF23A8 /* 5C-Yellow-Info.plist */,
+				4B91621C18F6C30300EF23A8 /* Glare-White-Info.plist */,
+				4B91619F18F6C2D800EF23A8 /* Glare-Black-Info.plist */,
+				4B09E66C13F6937F003003CC /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B8E150513F0117E00DD152F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4BB3692D182B81C10016F8E9 /* FKScreenshotEffect.h */,
+				4B91616218F6C0E100EF23A8 /* RF5CRedEffect.h */,
+				4B91616318F6C0E100EF23A8 /* RF5CRedEffect.m */,
+				4B91615518F6C03A00EF23A8 /* RF5CBlueEffect.h */,
+				4B91615618F6C03A00EF23A8 /* RF5CBlueEffect.m */,
+				4B91616818F6C0FE00EF23A8 /* RF5CGreenEffect.h */,
+				4B91616918F6C0FE00EF23A8 /* RF5CGreenEffect.m */,
+				4B91616E18F6C11400EF23A8 /* RF5CWhiteEffect.h */,
+				4B91616F18F6C11400EF23A8 /* RF5CWhiteEffect.m */,
+				4B91616B18F6C10900EF23A8 /* RF5CYellowEffect.h */,
+				4B91616C18F6C10900EF23A8 /* RF5CYellowEffect.m */,
+				4B91617B18F6C22700EF23A8 /* RFGlareWhiteEffect.h */,
+				4B91617C18F6C22700EF23A8 /* RFGlareWhiteEffect.m */,
+				4B91617E18F6C23E00EF23A8 /* RFGlareBlackEffect.h */,
+				4B91617F18F6C23E00EF23A8 /* RFGlareBlackEffect.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4B8E150713F0119900DD152F /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E150813F011A200DD152F /* iOS Screentaker Plugin-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B8E14EE13F0114500DD152F /* 5C Red */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8E150113F0114500DD152F /* Build configuration list for PBXNativeTarget "5C Red" */;
+			buildPhases = (
+				4B8E14EB13F0114500DD152F /* Sources */,
+				4B8E14EC13F0114500DD152F /* Frameworks */,
+				4B8E14ED13F0114500DD152F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "5C Red";
+			productName = "iOS Screentaker Plugin";
+			productReference = 4B8E14EF13F0114500DD152F /* iPhone 5c Red.screentakerplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4B91618718F6C2D800EF23A8 /* 5C Blue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B91619B18F6C2D800EF23A8 /* Build configuration list for PBXNativeTarget "5C Blue" */;
+			buildPhases = (
+				4B91618818F6C2D800EF23A8 /* Sources */,
+				4B91619018F6C2D800EF23A8 /* Frameworks */,
+				4B91619218F6C2D800EF23A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "5C Blue";
+			productName = "iOS Screentaker Plugin";
+			productReference = 4B91619E18F6C2D800EF23A8 /* iPhone 5c Blue.screentakerplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4B9161A018F6C2E900EF23A8 /* 5C Green */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9161B418F6C2E900EF23A8 /* Build configuration list for PBXNativeTarget "5C Green" */;
+			buildPhases = (
+				4B9161A118F6C2E900EF23A8 /* Sources */,
+				4B9161A918F6C2E900EF23A8 /* Frameworks */,
+				4B9161AB18F6C2E900EF23A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "5C Green";
+			productName = "iOS Screentaker Plugin";
+			productReference = 4B9161B718F6C2E900EF23A8 /* iPhone 5c Green.screentakerplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4B9161B918F6C2F100EF23A8 /* 5C Yellow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9161CD18F6C2F100EF23A8 /* Build configuration list for PBXNativeTarget "5C Yellow" */;
+			buildPhases = (
+				4B9161BA18F6C2F100EF23A8 /* Sources */,
+				4B9161C218F6C2F100EF23A8 /* Frameworks */,
+				4B9161C418F6C2F100EF23A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "5C Yellow";
+			productName = "iOS Screentaker Plugin";
+			productReference = 4B9161D018F6C2F100EF23A8 /* iPhone 5c Yellow.screentakerplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4B9161D218F6C2F600EF23A8 /* 5C White */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9161E618F6C2F600EF23A8 /* Build configuration list for PBXNativeTarget "5C White" */;
+			buildPhases = (
+				4B9161D318F6C2F600EF23A8 /* Sources */,
+				4B9161DB18F6C2F600EF23A8 /* Frameworks */,
+				4B9161DD18F6C2F600EF23A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "5C White";
+			productName = "iOS Screentaker Plugin";
+			productReference = 4B9161E918F6C2F600EF23A8 /* iPhone 5c White.screentakerplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4B9161EB18F6C2FD00EF23A8 /* Glare White */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9161FF18F6C2FD00EF23A8 /* Build configuration list for PBXNativeTarget "Glare White" */;
+			buildPhases = (
+				4B9161EC18F6C2FD00EF23A8 /* Sources */,
+				4B9161F418F6C2FD00EF23A8 /* Frameworks */,
+				4B9161F618F6C2FD00EF23A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glare White";
+			productName = "iOS Screentaker Plugin";
+			productReference = 4B91620218F6C2FD00EF23A8 /* iPhone 5s Glare White.screentakerplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4B91620418F6C30300EF23A8 /* Glare Black */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B91621818F6C30300EF23A8 /* Build configuration list for PBXNativeTarget "Glare Black" */;
+			buildPhases = (
+				4B91620518F6C30300EF23A8 /* Sources */,
+				4B91620D18F6C30300EF23A8 /* Frameworks */,
+				4B91620F18F6C30300EF23A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glare Black";
+			productName = "iOS Screentaker Plugin";
+			productReference = 4B91621B18F6C30300EF23A8 /* iPhone 5s Glare Black.screentakerplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B8E14E613F0114500DD152F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Fabian Kreiser";
+			};
+			buildConfigurationList = 4B8E14E913F0114500DD152F /* Build configuration list for PBXProject "iOS Screentaker Plugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B8E14E413F0114500DD152F;
+			productRefGroup = 4B8E14F013F0114500DD152F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B8E14EE13F0114500DD152F /* 5C Red */,
+				4B91618718F6C2D800EF23A8 /* 5C Blue */,
+				4B9161A018F6C2E900EF23A8 /* 5C Green */,
+				4B9161D218F6C2F600EF23A8 /* 5C White */,
+				4B9161B918F6C2F100EF23A8 /* 5C Yellow */,
+				4B9161EB18F6C2FD00EF23A8 /* Glare White */,
+				4B91620418F6C30300EF23A8 /* Glare Black */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B8E14ED13F0114500DD152F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91621D18F6C4A200EF23A8 /* iPhone5C_Red.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B91619218F6C2D800EF23A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91619918F6C2D800EF23A8 /* iPhone5C_Blue.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161AB18F6C2E900EF23A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161B118F6C2E900EF23A8 /* iPhone5C_Green.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161C418F6C2F100EF23A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91621E18F6C4D400EF23A8 /* iPhone5C_Yellow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161DD18F6C2F600EF23A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161E018F6C2F600EF23A8 /* iPhone5C_White.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161F618F6C2FD00EF23A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91622018F6C4E500EF23A8 /* iPhone5_White.png in Resources */,
+				4B91621F18F6C4E000EF23A8 /* iPhone5_Glare.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B91620F18F6C30300EF23A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91622218F6C4F400EF23A8 /* iPhone5_Black.png in Resources */,
+				4B91622118F6C4F100EF23A8 /* iPhone5_Glare.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B8E14EB13F0114500DD152F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91616418F6C0E100EF23A8 /* RF5CRedEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B91618818F6C2D800EF23A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91618A18F6C2D800EF23A8 /* RF5CBlueEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161A118F6C2E900EF23A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161A718F6C2E900EF23A8 /* RF5CGreenEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161BA18F6C2F100EF23A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161C118F6C2F100EF23A8 /* RF5CYellowEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161D318F6C2F600EF23A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161D418F6C2F600EF23A8 /* RF5CWhiteEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9161EC18F6C2FD00EF23A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9161F018F6C2FD00EF23A8 /* RFGlareWhiteEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B91620518F6C30300EF23A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91620818F6C30300EF23A8 /* RFGlareBlackEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B8E14FF13F0114500DD152F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4B8E150013F0114500DD152F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4B8E150213F0114500DD152F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Red-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Red";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Debug;
+		};
+		4B8E150313F0114500DD152F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Red-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Red";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Release;
+		};
+		4B91619C18F6C2D800EF23A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Blue-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Blue";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Debug;
+		};
+		4B91619D18F6C2D800EF23A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Blue-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Blue";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Release;
+		};
+		4B9161B518F6C2E900EF23A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Green-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Green";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Debug;
+		};
+		4B9161B618F6C2E900EF23A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Green-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Green";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Release;
+		};
+		4B9161CE18F6C2F100EF23A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Yellow-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Yellow";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Debug;
+		};
+		4B9161CF18F6C2F100EF23A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-Yellow-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c Yellow";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Release;
+		};
+		4B9161E718F6C2F600EF23A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-White-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c White";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Debug;
+		};
+		4B9161E818F6C2F600EF23A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "5C-White-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5c White";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Release;
+		};
+		4B91620018F6C2FD00EF23A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "Glare-White-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5s Glare White";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Debug;
+		};
+		4B91620118F6C2FD00EF23A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "Glare-White-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5s Glare White";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Release;
+		};
+		4B91621918F6C30300EF23A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "Glare-Black-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5s Glare Black";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Debug;
+		};
+		4B91621A18F6C30300EF23A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Screentaker Plugin-Prefix.pch";
+				INFOPLIST_FILE = "Glare-Black-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "iPhone 5s Glare Black";
+				WRAPPER_EXTENSION = screentakerplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B8E14E913F0114500DD152F /* Build configuration list for PBXProject "iOS Screentaker Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8E14FF13F0114500DD152F /* Debug */,
+				4B8E150013F0114500DD152F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B8E150113F0114500DD152F /* Build configuration list for PBXNativeTarget "5C Red" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8E150213F0114500DD152F /* Debug */,
+				4B8E150313F0114500DD152F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B91619B18F6C2D800EF23A8 /* Build configuration list for PBXNativeTarget "5C Blue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B91619C18F6C2D800EF23A8 /* Debug */,
+				4B91619D18F6C2D800EF23A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9161B418F6C2E900EF23A8 /* Build configuration list for PBXNativeTarget "5C Green" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9161B518F6C2E900EF23A8 /* Debug */,
+				4B9161B618F6C2E900EF23A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9161CD18F6C2F100EF23A8 /* Build configuration list for PBXNativeTarget "5C Yellow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9161CE18F6C2F100EF23A8 /* Debug */,
+				4B9161CF18F6C2F100EF23A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9161E618F6C2F600EF23A8 /* Build configuration list for PBXNativeTarget "5C White" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9161E718F6C2F600EF23A8 /* Debug */,
+				4B9161E818F6C2F600EF23A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9161FF18F6C2FD00EF23A8 /* Build configuration list for PBXNativeTarget "Glare White" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B91620018F6C2FD00EF23A8 /* Debug */,
+				4B91620118F6C2FD00EF23A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B91621818F6C30300EF23A8 /* Build configuration list for PBXNativeTarget "Glare Black" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B91621918F6C30300EF23A8 /* Debug */,
+				4B91621A18F6C30300EF23A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B8E14E613F0114500DD152F /* Project object */;
+}
