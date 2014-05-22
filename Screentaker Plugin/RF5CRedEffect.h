@@ -2,8 +2,8 @@
 //  RF5CRedEffect.h
 //  iOS Screentaker Plugin
 //
-//  Created by Fabian Kreiser on 10.04.14.
-//  Copyright (c) 2014 Fabian Kreiser. All rights reserved.
+//  Created by Rudd Fawcett on 10.04.14.
+//  Copyright (c) 2014 Rudd Fawcett. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
